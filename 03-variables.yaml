@@ -1,0 +1,10 @@
+- name: variables 
+  hosts: localhost
+  vars:
+    name: "mahesh"
+    owner: "Mahesh cheerneni"
+  tasks:
+    - name: variables Declaration
+      ansible.builtin.debug:
+        msg: "variables are created {{name}} and {{Owner}}"
+        
