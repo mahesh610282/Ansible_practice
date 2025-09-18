@@ -5,4 +5,4 @@
   tasks:
     - name: taking files with variables
       ansible.builtin.debug:
-        msg: "This cource is {{course}} and duration is {{duration}} and trainer name is {{trainer}}"
+        msg: "This cource is {{cource}} and duration is {{duration}} and trainer name is {{trainer}}"
