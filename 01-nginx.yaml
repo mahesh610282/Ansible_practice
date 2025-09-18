@@ -6,6 +6,7 @@
       ansible.builtin.package:
         name: nginx
         state: present
+        update_cache: yes
     - name: start service
       ansible.builtin.service:
         name: nginx
