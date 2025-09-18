@@ -1,0 +1,10 @@
+- name: vars_prompt means through command line
+  hosts: web
+  vars_prompt:
+    - name: Username
+      prompt: please enter a Username
+      private: true
+  tasks:
+    - name: vars files form prompt
+      ansible.builtin.debug:
+        msg: "My Username is {{Username}}"

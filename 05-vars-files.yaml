@@ -1,0 +1,8 @@
+- name: variables files
+  hosts: web
+  vars_files:
+    - vars.yaml
+  tasks:
+    - name: taking files with variables
+      ansible.builtin.debug:
+        msg: "This cource is {{course}} and duration is {{duration}} and trainer name is {{trainer}}"
