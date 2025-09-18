@@ -1,0 +1,8 @@
+- name: variables from invenetery
+  hosts: web
+  tasks:
+    - name: iam taking variables from inventroy files
+      vars:
+        timings: "9:30 am to 11:30 am"
+      ansible.builtin.debug:
+        msg: " course name is :{{course}} \n and trainer name is :{{trainer}} \n and duration is : {{duration}} and time :{{timings}}"
