@@ -6,5 +6,5 @@
   tasks:
     - name: variables Declaration
       ansible.builtin.debug:
-        msg: "variables are created {{name}} and {{Owner}}"
+        msg: "variables are created {{name}} and {{owner}}"
         
