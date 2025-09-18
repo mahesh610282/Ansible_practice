@@ -5,7 +5,7 @@
       ansible.builtin.debug:
         msg: " This is play -1 and task-1"
 - name: Play-2
-  hosts: localhost
+  hosts: web
   tasks:
     - name: Play-2 and task-2
       ansible.builtin.debug:
