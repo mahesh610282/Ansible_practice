@@ -7,7 +7,12 @@
       - Jenkins
       - Ansible
       - K8s
+    Experience:
+      devops: 5
+      aws: 2
+      docker: 2
+      K8s: 3
   tasks:
     - name: string data-types
       ansible.builtin.debug:
-        msg: "my course name is {{course}}, Tools {{tools}} are covered"
+        msg: "my course name is {{course}}, Tools {{tools}} are covered and my Experience: {{Experience}}"
