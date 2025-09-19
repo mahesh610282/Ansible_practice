@@ -1,0 +1,13 @@
+- name: Data types
+  hosts: web
+  vars:
+    course: devops with aws
+    tools:
+      - Terraform
+      - Jenkins
+      - Ansible
+      - K8s
+  tasks:
+    - name: string data-types
+      ansible.builtin.debug:
+        msg: "my course name is {{course}}, Tools {{tools}} are covered"
